@@ -6,31 +6,43 @@
 <meta content="telephone=no" name="format-detection" />
 <meta content="email=no" name="format-detection" />
 <title>RPD-demo | 产品生产进度</title>
-<link rel="stylesheet/less" href="http://localhost:3000/static/pagescript/demo/productdetail/less/main.less"/>
+<link rel="stylesheet/less" href="http://test.rpd.com/static/pagescript/demo/productdetail/less/main.less"/>
 <script>
     less = {
         env: "development"
     };
 </script>
-<script src="http://localhost:3000/static/common/core/less.js"></script>
+<script src="http://test.rpd.com/static/common/core/less.js"></script>
 <script>
     less.watch();
 </script>
 </head>
 <body>
-
 <div class="container">
+    <header>
+        <h1>RPD</h1>
+        <span class="menu"><i class="glyphicon glyphicon-align-justify"></i></span>
+    </header>
 	<div class="mod" id="productdetail">
-		<h3>产品 <span>LD-0001</span> 生产进度</h3>
-		<div class="progress">
-			
-		</div>
+		<div class="step">
+            <div class="line"></div>
+            <div class="step-list">
+    			<div class="item-step"><span class="order"><i class="glyphicon glyphicon-ok-circle"></i></span>车头后片黑色料刀模打 已经完成</div>
+                <div class="item-step"><span class="order"><i class="glyphicon glyphicon-ok-circle"></i></span>车头外围带驳料片刀模打 已经完成</div>
+                <div class="item-step"><span class="order"><i class="glyphicon glyphicon-ok-circle"></i></span>车头柱围带开条 已经完成</div>
+                <div class="item-step"><span class="order"><i class="glyphicon glyphicon-ok-circle"></i></span>靠背顶片开裁 已经完成</div>
+                <div class="item-step"><span class="order"><i class="glyphicon glyphicon-record"></i></span>面片连中片小方中扯开条 未完成</div>
+                <div class="item-step"><span class="order"><i class="glyphicon glyphicon-record"></i></span>底座围带整卷印 未完成</div>
+                <div class="item-step"><span class="order"><i class="glyphicon glyphicon-record"></i></span>底座围带合口 未完成</div>
+                <div class="item-step"><span class="order"><i class="glyphicon glyphicon-record"></i></span>车头成形 未完成</div>
+    		</div>
+        </div>
 	</div>
 </div>
 </body>
 <script>
     var require = {
-        baseUrl: 'http://localhost:3000/static',   //"static"
+        baseUrl: 'http://test.rpd.com/static',   //"static"
         text: {
             env: 'xhr'
         },
@@ -48,5 +60,5 @@
         }
     };
 </script>
-<script defer src="http://localhost:3000/static/common/core/require.js" data-main="http://localhost:3000/static/pagescript/demo/productdetail/js/main.js"></script>
+<script defer src="http://test.rpd.com/static/common/core/require.js" data-main="http://test.rpd.com/static/pagescript/demo/productdetail/js/main.js"></script>
 </html>

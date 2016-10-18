@@ -6,32 +6,39 @@
 <meta content="telephone=no" name="format-detection" />
 <meta content="email=no" name="format-detection" />
 <title>RPD-demo | 实时产线进展</title>
-<link rel="stylesheet/less" href="http://localhost:3000/static/pagescript/demo/workerlist/less/main.less"/>
+<link rel="stylesheet/less" href="http://test.rpd.com/static/pagescript/demo/workerlist/less/main.less"/>
 <script>
     less = {
         env: "development"
     };
 </script>
-<script src="http://localhost:3000/static/common/core/less.js"></script>
+<script src="http://test.rpd.com/static/common/core/less.js"></script>
 <script>
     less.watch();
 </script>
 </head>
 <body>
 <div class="container">
+    <header>
+        <h1>RPD</h1>
+        <span class="menu"><i class="glyphicon glyphicon-align-justify"></i></span>
+    </header>
 	<div class="mod" id="workerlist">
-		<h3>实时产线进展</h3>
 		<table>
-			<tr>
-			<td>员工</td><td>物料</td><td>耗时</td><td>质检</td></tr>
-			<tr><td><a href="worker.html?id=1">23554</a></td><td><a href="materials.html?id=1">LM0123S</a></td><td>20:00</td><td>合格</td></tr>
+			<tr><td>员工编号</td><td>物料编号</td><td>耗时</td><td>质检</td></tr>
+			<tr><td><a href="/workerdetail?id=23554">23554</a></td><td>LM0123S</td><td>00:20:00</td><td><i class="glyphicon glyphicon-ok"></i></td></tr>
+            <tr><td><a href="/workerdetail?id=23555">23555</a></td><td>LM0123S</td><td>00:20:00</td><td><i class="glyphicon glyphicon-ok"></i></td></tr>
+            <tr><td><a href="/workerdetail?id=23556">23556</a></td><td>LM0123S</td><td>00:20:00</td><td><i class="glyphicon glyphicon-ok"></i></td></tr>
+            <tr><td><a href="/workerdetail?id=23557">23557</a></td><td>LM0123S</td><td>00:20:00</td><td><i class="glyphicon glyphicon-remove"></i></td></tr>
+            <tr><td><a href="/workerdetail?id=23558">23558</a></td><td>LM0123S</td><td>00:20:00</td><td><i class="glyphicon glyphicon-ok"></i></td></tr>
+            <tr><td><a href="/workerdetail?id=23559">23559</a></td><td>LM0123S</td><td>00:20:00</td><td><i class="glyphicon glyphicon-ok"></i></td></tr>
 		</table>
 	</div>
 </div>
 </body>
 <script>
     var require = {
-        baseUrl: 'http://localhost:3000/static',   //"static"
+        baseUrl: 'http://test.rpd.com/static',   //"static"
         text: {
             env: 'xhr'
         },
@@ -49,5 +56,5 @@
         }
     };
 </script>
-<script defer src="http://localhost:3000/static/common/core/require.js" data-main="http://localhost:3000/static/pagescript/demo/workerlist/js/main.js"></script>
+<script defer src="http://test.rpd.com/static/common/core/require.js" data-main="http://test.rpd.com/static/pagescript/demo/workerlist/js/main.js"></script>
 </html>

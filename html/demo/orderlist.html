@@ -6,13 +6,13 @@
 <meta content="telephone=no" name="format-detection" />
 <meta content="email=no" name="format-detection" />
 <title>RPD-demo | 订单列表</title>
-<link rel="stylesheet/less" href="http://localhost:3000/static/pagescript/demo/orderlist/less/main.less"/>
+<link rel="stylesheet/less" href="http://test.rpd.com/static/pagescript/demo/orderlist/less/main.less"/>
 <script>
     less = {
         env: "development"
     };
 </script>
-<script src="http://localhost:3000/static/common/core/less.js"></script>
+<script src="http://test.rpd.com/static/common/core/less.js"></script>
 <script>
     less.watch();
 </script>
@@ -21,17 +21,17 @@
 <div class="contianer">
     <header>
         <h1>RPD</h1>
-        <h2>盛景工业互联网实时产线数据采集系统</h2>
+        <span class="menu"><i class="glyphicon glyphicon-align-justify"></i></span>
     </header>
     <div class="container">
         <div class="list"></div>
     </div>
-    <footer>@cpptRight shengjing 2016.</footer>
+    <footer>@copyRight shengjing 2016.</footer>
 </div>
 </body>
 <script>
     var require = {
-        baseUrl: 'http://localhost:3000/static',   //"static"
+        baseUrl: 'http://test.rpd.com/static',   //"static"
         text: {
             env: 'xhr'
         },
@@ -49,5 +49,5 @@
         }
     };
 </script>
-<script defer src="http://localhost:3000/static/common/core/require.js" data-main="http://localhost:3000/static/pagescript/demo/orderlist/js/main.js"></script>
+<script defer src="http://test.rpd.com/static/common/core/require.js" data-main="http://test.rpd.com/static/pagescript/demo/orderlist/js/main.js"></script>
 </html>

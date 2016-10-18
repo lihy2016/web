@@ -6,13 +6,13 @@
 <meta content="telephone=no" name="format-detection" />
 <meta content="email=no" name="format-detection" />
 <title>RPD-demo | 首页</title>
-<link rel="stylesheet/less" href="http://localhost:3000/static/pagescript/demo/login/less/main.less"/>
+<link rel="stylesheet/less" href="http://test.rpd.com/static/pagescript/demo/login/less/main.less"/>
 <script>
     less = {
         env: "development"
     };
 </script>
-<script src="http://localhost:3000/static/common/core/less.js"></script>
+<script src="http://test.rpd.com/static/common/core/less.js"></script>
 <script>
     less.watch();
 </script>
@@ -22,8 +22,8 @@
   <h1>RPD</h1>
   <div class="tips">请输入用户名和密码登录RPD系统</div>
   <form method="post" action="#" class="form">
-    <input type="text" placeholder="用户名"/>
-    <input type="text" placeholder="密码"/>
+    <input type="text" placeholder="用户名" class="uid"/>
+    <input type="text" placeholder="密码" class="pas"/>
     <a href="javascript:void(0)" class="btn btn-primary login-btn">登录</a>
   </form>
   <div class="bom"><a href="#">注册RPD</a><a href="#">忘记密码</a></div>
@@ -31,7 +31,7 @@
 </body>
 <script>
     var require = {
-        baseUrl: 'http://localhost:3000/static',   //"static"
+        baseUrl: 'http://test.rpd.com/static',   //"static"
         text: {
             env: 'xhr'
         },
@@ -49,5 +49,5 @@
         }
     };
 </script>
-<script defer src="http://localhost:3000/static/common/core/require.js" data-main="http://localhost:3000/static/pagescript/demo/login/js/main.js"></script>
+<script defer src="http://test.rpd.com/static/common/core/require.js" data-main="http://test.rpd.com/static/pagescript/demo/login/js/main.js"></script>
 </html>

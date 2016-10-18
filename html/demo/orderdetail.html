@@ -6,22 +6,27 @@
 <meta content="telephone=no" name="format-detection" />
 <meta content="email=no" name="format-detection" />
 <title>RPD-demo | 订单详情</title>
-<link rel="stylesheet/less" href="http://localhost:3000/static/pagescript/demo/orderdetail/less/main.less"/>
+<link rel="stylesheet/less" href="http://test.rpd.com/static/pagescript/demo/orderdetail/less/main.less"/>
 <script>
     less = {
         env: "development"
     };
 </script>
-<script src="http://localhost:3000/static/common/core/less.js"></script>
+<script src="http://test.rpd.com/static/common/core/less.js"></script>
 <script>
     less.watch();
 </script>
 </head>
 <body>
 <div id="container">
+    <header>
+        <h1>RPD</h1>
+        <span class="menu"><i class="glyphicon glyphicon-align-justify"></i></span>
+    </header>
 	<div class="mod" id="progress">
 		<div id="charts"></div>
 	</div>
+    <div class="topbar"><span><a href="/productlist"><i class="glyphicon glyphicon-wrench"></i>产品生产状况</a></span><span><a href="/workerlist"><i class="glyphicon glyphicon-dashboard"></i>实时产线进展</a></span></div>
 	<div class="mod" id="details">
 		<h3 class="item"><span class="title"></span>订单详情</h3>
 		<ul>
@@ -36,12 +41,12 @@
 			<li><span>产品工艺</span>切割焊点切割焊点</li>
 		</ul>
 	</div>
-	<div class="topbar"><span><a href="productlist.html">产品生产状况</a></span><span><a href="workerlist.html"><i class="glyphicon glyphicon-time"></i>实时产线进展</a></span></div>
+    <footer>@copyRight shengjing 2016.</footer>
 </div>
 </body>
 <script>
     var require = {
-        baseUrl: 'http://localhost:3000/static',   //"static"
+        baseUrl: 'http://test.rpd.com/static',   //"static"
         text: {
             env: 'xhr'
         },
@@ -59,5 +64,5 @@
         }
     };
 </script>
-<script defer src="http://localhost:3000/static/common/core/require.js" data-main="http://localhost:3000/static/pagescript/demo/orderdetail/js/main.js"></script>
+<script defer src="http://test.rpd.com/static/common/core/require.js" data-main="http://test.rpd.com/static/pagescript/demo/orderdetail/js/main.js"></script>
 </html>
